@@ -1,8 +1,9 @@
 {
 	"info": {
 		"_postman_id": "1a79f36c-2c09-4d72-9bbe-8319115ac963",
-		"name": "Practica 1",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+		"name": "Práctica 1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11029039"
 	},
 	"item": [
 		{
@@ -28,16 +29,27 @@
 		},
 		{
 			"name": "Get/me -401",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validar el código de respuesta es -Unauathorized-\", function(){\r",
+							"    pm.expect(pm.response.code).to.eql(401)\r",
+							"}) "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://api.spotify.com/v1/me",
+					"raw": "https://{{url_Base}}/v1/me",
 					"protocol": "https",
 					"host": [
-						"api",
-						"spotify",
-						"com"
+						"{{url_Base}}"
 					],
 					"path": [
 						"v1",
@@ -49,22 +61,33 @@
 		},
 		{
 			"name": "Get/me -200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Validar el código de respuesta es -OK-\", function(){\r",
+							"    pm.expect(pm.response.code).to.eql(200)\r",
+							"}) "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "GET",
 				"header": [
 					{
 						"key": "Authorization",
-						"value": "Bearer BQDcm61zbqSiOnAMwS-FeT5FWXY1KXz6HHWn_DjKhtri_begcW6Ug9yA3n7tyRfP3nsXa0RgY74ORb0SqiBWc_ySja5fAxKg6MrRncguUhBIYJDUnbTq8Gedoo2dBGqJZWetzw6fzvzrovQQNaj0YVgAZburzUfclX7EF6JqAFcO1ZzJ5UT_bfpMjXkAS3hz4crvE6bHLHaD9ifQP8CE7x8rLZrFI06EZACE5ARRM0ZPzN-qQH6EPpuE1bweT1tMYAml0uyHltM0-Fw1J4WeCp2LQWAJvNVUcV4zAmy3DQt_u02tDtnt7aHixHXz",
+						"value": "Bearer BQAhwn6b0KwGKeVoCJlL06MDi1HdfCYEiVrXPkbTQHDI75Wq6Pi1oPWxShB4iJYvrvS8rKEFK8IIaaJCy733M-y27E7JPAL4E6lFM6c0JifkIOcRwGSOo4SL6ljrXIGLTfV6HfRQzqly7nxCIZTrcsixyk-kSGbALNYRGejFB4vf1WQtJM0iFm5MpaG0c6xOUYDl6Gd0lounK2a85DZ3mfSYsXtXZHL5szfGrhjLNGmhmY3ET_kXij78_SGrhaWibspWkudUOHf64nVJd2jA1VSchPXI-qjn6nAHN9g9CT0PuYZjp-0VBPk98bjRT0-cPH3JWXbdGR1QvKeMU6FQGO0NgS25KQ",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "https://api.spotify.com/v1/me",
+					"raw": "https://{{url_Base}}/v1/me",
 					"protocol": "https",
 					"host": [
-						"api",
-						"spotify",
-						"com"
+						"{{url_Base}}"
 					],
 					"path": [
 						"v1",
