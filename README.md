@@ -1,2 +1,2 @@
 # APIS-Junio2022
-Esta es una prueba de repositorio
+Repo con lo aprendido durante el curso de Postman con Newman
