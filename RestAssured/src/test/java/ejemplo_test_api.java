@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 public class ejemplo_test_api {
     @Test
@@ -15,7 +17,16 @@ public class ejemplo_test_api {
                 .headers("Accept","application/json").get();
 
         String body_response =response.getBody ().prettyPrint ();
+        String status = String.format(String.valueOf(response.getStatusCode()));
 
-        assertEquals(200,response.getStatusCode ());
+        System.out.println("Status code: " + status);
+
+        //jUnit5
+        //Probar el codigo de respuesta
+        assertEquals(200,response.getStatusCode());
+        //Revisar/validar que el body response no este vacio
+        assertNotNull(body_response);
+        //Validar que el body contenga la cadena id
+        assertTrue(body_response.contains("id"));
     }
 }
