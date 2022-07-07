@@ -1,0 +1,39 @@
+{
+    "access_token": "mc1xccd8ce2821d1c42ad17694d2690911a2008c8848_v2",
+    "account": {
+        "account_id": "/private/accounts/11686178",
+        "can_publish": true,
+        "email": "test1_agente@mailinator.com",
+        "email_verified": true,
+        "locations": [
+            
+        ],
+        "name": "agente_ventas4614.0",
+        "phone": "1930429770",
+        "phone_hidden": false,
+        "professional": false,
+        "rfc": "",
+        "uuid": "d89b3d75-6e0f-49be-a5eb-81ad90835e68"
+    },
+    "ad_events": {
+        "24h": {
+            "calls": 0,
+            "mails": 0,
+            "phone_views": 0,
+            "views": 0
+        },
+        "7d": {
+            "calls": 0,
+            "mails": 0,
+            "phone_views": 0,
+            "views": 0
+        },
+        "total": {
+            "calls": 0,
+            "mails": 0,
+            "phone_views": 0,
+            "views": 0
+        }
+    },
+    "token_type": "tag:scmcoord.com,2013:api"
+}

@@ -570,7 +570,7 @@ public class eComerce {
                 .formParam ("region", "11")
                 .formParam ("municipality", "292")
                 .formParam ("area", "7488")
-                .formParam ("alias", "Depto")
+                .formParam ("alias", "Depto en renta")
                 .filter (new AllureRestAssured ())
                 .put ();
 

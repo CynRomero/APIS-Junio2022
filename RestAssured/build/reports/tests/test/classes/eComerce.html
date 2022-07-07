@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">30.424s</div>
+<div class="counter">30.239s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">95%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,132 +61,16 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
+<a href="#tab1">Standard output</a>
 </li>
 <li>
-<a href="#tab2">Standard output</a>
-</li>
-<li>
-<a href="#tab3">Standard error</a>
+<a href="#tab2">Standard error</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="borrar_direccion()"></a>
-<h3 class="failures">Test case 15: Eliminar direcciÃ³n previamente dada de alta</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: expected: &lt;200&gt; but was: &lt;500&gt;
-	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
-	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
-	at eComerce.borrar_direccion(eComerce.java:603)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:725)
-	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at org.junit.jupiter.api.extension.InvocationInterceptor.interceptTestMethod(InvocationInterceptor.java:118)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:149)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:140)
-	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:84)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(ExecutableInvoker.java:115)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.lambda$invoke$0(ExecutableInvoker.java:105)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:104)
-	at org.junit.jupiter.engine.execution.ExecutableInvoker.invoke(ExecutableInvoker.java:98)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:214)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:210)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:135)
-	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:66)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:99)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:79)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:75)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:61)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at com.sun.proxy.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.stop(TestWorker.java:135)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
-	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
-	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
-	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
-	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
-	at java.lang.Thread.run(Thread.java:748)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -200,132 +84,132 @@
 <tr>
 <td class="success">Test case 16: Obtener el detalle del balance</td>
 <td class="success">balance()</td>
-<td class="success">0.366s</td>
+<td class="success">0.489s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 12: Borrar un anuncio.</td>
 <td class="success">borrar_anuncio()</td>
-<td class="success">2.053s</td>
+<td class="success">1.580s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">Test case 15: Eliminar direcciÃ³n previamente dada de alta</td>
-<td class="failures">borrar_direccion()</td>
-<td class="failures">0.334s</td>
-<td class="failures">failed</td>
+<td class="success">Test case 15: Eliminar direcciÃ³n previamente dada de alta</td>
+<td class="success">borrar_direccion()</td>
+<td class="success">0.545s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 18: Buscar trabajo.</td>
 <td class="success">buscar_trabajo()</td>
-<td class="success">4.019s</td>
+<td class="success">4.037s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 19: BÃºsqueda de artÃ­culos</td>
 <td class="success">busqueda()</td>
-<td class="success">0.219s</td>
+<td class="success">0.319s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 9: Crear un anuncio.</td>
 <td class="success">crear_anuncio()</td>
-<td class="success">4.668s</td>
+<td class="success">4.471s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 13: Crear una nueva direcciÃ³n</td>
 <td class="success">crear_direccion()</td>
-<td class="success">0.372s</td>
+<td class="success">0.531s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 3: Crear un usuario nuevo.</td>
 <td class="success">crear_usuario_nuevo()</td>
-<td class="success">0.953s</td>
+<td class="success">1.056s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 11: Editar un anuncio.</td>
 <td class="success">editar_anuncio()</td>
-<td class="success">3.844s</td>
+<td class="success">3.831s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 14: Editar una direcciÃ³n.</td>
 <td class="success">editar_direccion()</td>
-<td class="success">0.470s</td>
+<td class="success">0.325s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 7: Editar datos del usuario</td>
 <td class="success">editar_info_usuario()</td>
-<td class="success">0.809s</td>
+<td class="success">0.715s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 6: Obtener informaciÃ³n bÃ¡sica del usuario.</td>
 <td class="success">info_usuario()</td>
-<td class="success">0.613s</td>
+<td class="success">0.365s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 21: Mis compras.</td>
 <td class="success">mis_compras()</td>
-<td class="success">1.073s</td>
+<td class="success">1.388s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 20: Mis ventas.</td>
 <td class="success">mis_ventas()</td>
-<td class="success">1.286s</td>
+<td class="success">1.208s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 4: Obtener mi usuario.</td>
 <td class="success">obtener_Token_usando_header_authorization()</td>
-<td class="success">2.299s</td>
+<td class="success">2.791s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 2: Ver URLs de las categorÃ­as.</td>
 <td class="success">obtener_Token_usando_header_authorization2()</td>
-<td class="success">0.248s</td>
+<td class="success">0.376s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 1: Obtener las categoras.</td>
 <td class="success">obtener_categorias()</td>
-<td class="success">3.304s</td>
+<td class="success">3.245s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 5: Obtener token usando correo y contraseÃ±a</td>
 <td class="success">obtener_token_usando_auth_emil_pass()</td>
-<td class="success">1.587s</td>
+<td class="success">0.997s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 17: Olvide mi contraseÃ±a.</td>
 <td class="success">olvide_contrsena()</td>
-<td class="success">0.534s</td>
+<td class="success">0.637s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 8: Actualizar nÃºmero de telÃ©fono</td>
 <td class="success">update_telefono()</td>
-<td class="success">0.723s</td>
+<td class="success">0.779s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">Test case 10: Ver los anuncios pendientes publicados</td>
 <td class="success">ver_anuncios_pendientes()</td>
-<td class="success">0.650s</td>
+<td class="success">0.554s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
 <pre>Request method:	GET
@@ -339,7 +223,7 @@ Headers:		Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Time: 1305
+Time: 1293
 Body Response: {&quot;all_categories&quot;:{&quot;color&quot;:&quot;FFFFFF&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/todas_las_categorias.png&quot;,&quot;label&quot;:&quot;Todas las categorías&quot;},&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;1020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;1020&quot;]},&quot;label&quot;:&quot;Venta inmuebles&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;1040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;1040&quot;]},&quot;label&quot;:&quot;Renta inmuebles&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;1060&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;1060&quot;]},&quot;label&quot;:&quot;Traspasos&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;1080&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;1080&quot;]},&quot;label&quot;:&quot;Rentas vacacionales&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;1100&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;1100&quot;]},&quot;label&quot;:&quot;Desarrollos inmobiliarios&quot;}],&quot;code&quot;:&quot;1000&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;1000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/inmuebles.png&quot;,&quot;label&quot;:&quot;Inmuebles&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;2021&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2021&quot;]},&quot;label&quot;:&quot;Autos&quot;},{&quot;code&quot;:&quot;2022&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2022&quot;]},&quot;label&quot;:&quot;Suv, Jeep y Van&quot;},{&quot;code&quot;:&quot;2023&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2023&quot;]},&quot;label&quot;:&quot;Pick up&quot;}],&quot;code&quot;:&quot;2020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2020&quot;]},&quot;label&quot;:&quot;Automóviles y camionetas&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;2040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2040&quot;]},&quot;label&quot;:&quot;Motocicletas&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;2121&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2121&quot;]},&quot;label&quot;:&quot;Autoestereos y sonido&quot;},{&quot;code&quot;:&quot;2122&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2122&quot;]},&quot;label&quot;:&quot;Refacciones y otras&quot;},{&quot;code&quot;:&quot;2123&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2123&quot;]},&quot;label&quot;:&quot;Rines y llantas&quot;},{&quot;code&quot;:&quot;2124&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2124&quot;]},&quot;label&quot;:&quot;Remolques y cajas secas&quot;}],&quot;code&quot;:&quot;2120&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2120&quot;]},&quot;label&quot;:&quot;Accesorios y piezas&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;2080&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2080&quot;]},&quot;label&quot;:&quot;Camiones, comerciales y casas rodantes&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;2060&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2060&quot;]},&quot;label&quot;:&quot;Náutica y aéreos&quot;}],&quot;code&quot;:&quot;2000&quot;,&quot;color&quot;:&quot;E1E1E1&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;2000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/vehiculos.png&quot;,&quot;label&quot;:&quot;Vehículos&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;5041&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5041&quot;]},&quot;label&quot;:&quot;Telefonía&quot;},{&quot;code&quot;:&quot;5042&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5042&quot;]},&quot;label&quot;:&quot;Accesorios&quot;}],&quot;code&quot;:&quot;5040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5040&quot;]},&quot;label&quot;:&quot;Celulares y teléfonos&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;5080&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5080&quot;]},&quot;label&quot;:&quot;Audio, tv, video y fotografía&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;5021&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5021&quot;]},&quot;label&quot;:&quot;Laptops, PC y tabletas&quot;},{&quot;code&quot;:&quot;5022&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5022&quot;]},&quot;label&quot;:&quot;Accesorios, juegos y programas&quot;}],&quot;code&quot;:&quot;5020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5020&quot;]},&quot;label&quot;:&quot;Computadoras y accesorios&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;5060&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5060&quot;]},&quot;label&quot;:&quot;Consolas y videojuegos&quot;}],&quot;code&quot;:&quot;5000&quot;,&quot;color&quot;:&quot;8ECBCD&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;5000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/computadoras_y_electronica.png&quot;,&quot;label&quot;:&quot;Computación y electrónica&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;3041&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3041&quot;]},&quot;label&quot;:&quot;Ventilación y calefacción&quot;},{&quot;code&quot;:&quot;3042&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3042&quot;]},&quot;label&quot;:&quot;Utensilios de cocina&quot;},{&quot;code&quot;:&quot;3043&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3043&quot;]},&quot;label&quot;:&quot;Electrodomésticos y línea blanca&quot;},{&quot;code&quot;:&quot;3044&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3044&quot;]},&quot;label&quot;:&quot;Blancos, organización y limpieza&quot;}],&quot;code&quot;:&quot;3040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3040&quot;]},&quot;label&quot;:&quot;Todo para tu casa&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;3020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3020&quot;]},&quot;label&quot;:&quot;Jardín, herramientas y exteriores&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;3061&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3061&quot;]},&quot;label&quot;:&quot;Vestidos, faldas, trajes&quot;},{&quot;code&quot;:&quot;3062&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3062&quot;]},&quot;label&quot;:&quot;Zapatos&quot;},{&quot;code&quot;:&quot;3063&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3063&quot;]},&quot;label&quot;:&quot;Playeras y camisas&quot;},{&quot;code&quot;:&quot;3064&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3064&quot;]},&quot;label&quot;:&quot;Pantalones y shorts&quot;},{&quot;code&quot;:&quot;3065&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3065&quot;]},&quot;label&quot;:&quot;Sweaters, abrigos y chamarras&quot;},{&quot;code&quot;:&quot;3066&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3066&quot;]},&quot;label&quot;:&quot;Otras prendas de vestir&quot;}],&quot;code&quot;:&quot;3060&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3060&quot;]},&quot;label&quot;:&quot;Ropa y calzado&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;3101&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3101&quot;]},&quot;label&quot;:&quot;Ropa, calzado y accesorios&quot;},{&quot;code&quot;:&quot;3102&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3102&quot;]},&quot;label&quot;:&quot;Juguetes&quot;},{&quot;code&quot;:&quot;3103&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3103&quot;]},&quot;label&quot;:&quot;Sillas y carriolas&quot;},{&quot;code&quot;:&quot;3104&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3104&quot;]},&quot;label&quot;:&quot;Muebles y blancos&quot;},{&quot;code&quot;:&quot;3105&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3105&quot;]},&quot;label&quot;:&quot;Cuidado y nutrición&quot;}],&quot;code&quot;:&quot;3100&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3100&quot;]},&quot;label&quot;:&quot;Bebés y niños&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;3081&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3081&quot;]},&quot;label&quot;:&quot;Relojes&quot;},{&quot;code&quot;:&quot;3082&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3082&quot;]},&quot;label&quot;:&quot;Joyas y bisutería&quot;},{&quot;code&quot;:&quot;3083&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3083&quot;]},&quot;label&quot;:&quot;Bolsas, carteras y cinturones&quot;},{&quot;code&quot;:&quot;3084&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3084&quot;]},&quot;label&quot;:&quot;Lentes, gorras y otros accesorios&quot;}],&quot;code&quot;:&quot;3080&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3080&quot;]},&quot;label&quot;:&quot;Accesorios y joyería&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;3121&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3121&quot;]},&quot;label&quot;:&quot;Sala&quot;},{&quot;code&quot;:&quot;3122&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3122&quot;]},&quot;label&quot;:&quot;Recámara&quot;},{&quot;code&quot;:&quot;3123&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3123&quot;]},&quot;label&quot;:&quot;Comedor&quot;},{&quot;code&quot;:&quot;3124&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3124&quot;]},&quot;label&quot;:&quot;Artículos de decoración&quot;},{&quot;code&quot;:&quot;3125&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3125&quot;]},&quot;label&quot;:&quot;Otros muebles&quot;}],&quot;code&quot;:&quot;3120&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3120&quot;]},&quot;label&quot;:&quot;Muebles y decoración&quot;}],&quot;code&quot;:&quot;3000&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;3000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/tu_hogar_y_tu.png&quot;,&quot;label&quot;:&quot;Tu hogar y tú&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;6020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;6020&quot;]},&quot;label&quot;:&quot;Ofertas de empleo&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;6040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;6040&quot;]},&quot;label&quot;:&quot;Busco empleo&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;6060&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;6060&quot;]},&quot;label&quot;:&quot;Educación&quot;}],&quot;code&quot;:&quot;6000&quot;,&quot;color&quot;:&quot;E1E1E1&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;6000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/empleo_y_educacion.png&quot;,&quot;label&quot;:&quot;Empleo y educación&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;4021&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4021&quot;]},&quot;label&quot;:&quot;Animales&quot;},{&quot;code&quot;:&quot;4022&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4022&quot;]},&quot;label&quot;:&quot;Accesorios, cuidado y nutrición&quot;}],&quot;code&quot;:&quot;4020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4020&quot;]},&quot;label&quot;:&quot;Animales y mascotas&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;4041&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4041&quot;]},&quot;label&quot;:&quot;Ropa y calzado deportivo&quot;},{&quot;code&quot;:&quot;4042&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4042&quot;]},&quot;label&quot;:&quot;Equipo, accesorios y hobbies&quot;}],&quot;code&quot;:&quot;4040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4040&quot;]},&quot;label&quot;:&quot;Deportes y hobbies&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;4060&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4060&quot;]},&quot;label&quot;:&quot;Instrumentos musicales&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;4100&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4100&quot;]},&quot;label&quot;:&quot;Coleccionismo&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;4080&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4080&quot;]},&quot;label&quot;:&quot;Música, libros y películas&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;4120&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4120&quot;]},&quot;label&quot;:&quot;Salud y belleza&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;4140&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4140&quot;]},&quot;label&quot;:&quot;Papelería, escolares y oficina&quot;}],&quot;code&quot;:&quot;4000&quot;,&quot;color&quot;:&quot;8ECBCD&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;4000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/tiempo_libre.png&quot;,&quot;label&quot;:&quot;Tiempo libre&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8021&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8021&quot;]},&quot;label&quot;:&quot;Construcción&quot;},{&quot;code&quot;:&quot;8022&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8022&quot;]},&quot;label&quot;:&quot;Diseño&quot;},{&quot;code&quot;:&quot;8023&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8023&quot;]},&quot;label&quot;:&quot;Decoración de interiores&quot;},{&quot;code&quot;:&quot;8024&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8024&quot;]},&quot;label&quot;:&quot;Remodelaciones&quot;},{&quot;code&quot;:&quot;8025&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8025&quot;]},&quot;label&quot;:&quot;Jardinería&quot;},{&quot;code&quot;:&quot;8026&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8026&quot;]},&quot;label&quot;:&quot;Persianas y pisos&quot;},{&quot;code&quot;:&quot;8027&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8027&quot;]},&quot;label&quot;:&quot;Carpinteros&quot;},{&quot;code&quot;:&quot;8028&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8028&quot;]},&quot;label&quot;:&quot;Electricista&quot;},{&quot;code&quot;:&quot;8029&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8029&quot;]},&quot;label&quot;:&quot;Herrería&quot;},{&quot;code&quot;:&quot;8030&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8030&quot;]},&quot;label&quot;:&quot;Albañiles&quot;},{&quot;code&quot;:&quot;8031&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8031&quot;]},&quot;label&quot;:&quot;Plomero&quot;},{&quot;code&quot;:&quot;8032&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8032&quot;]},&quot;label&quot;:&quot;Pintor&quot;},{&quot;code&quot;:&quot;8033&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8033&quot;]},&quot;label&quot;:&quot;Limpieza&quot;},{&quot;code&quot;:&quot;8034&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8034&quot;]},&quot;label&quot;:&quot;Mantenimiento de Inmuebles&quot;}],&quot;code&quot;:&quot;8020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8020&quot;]},&quot;label&quot;:&quot;Remodelaciones y mantenimiento&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8041&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8041&quot;]},&quot;label&quot;:&quot;Arquitectos&quot;},{&quot;code&quot;:&quot;8042&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8042&quot;]},&quot;label&quot;:&quot;Abogados&quot;},{&quot;code&quot;:&quot;8043&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8043&quot;]},&quot;label&quot;:&quot;Contadores&quot;},{&quot;code&quot;:&quot;8044&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8044&quot;]},&quot;label&quot;:&quot;Administración&quot;},{&quot;code&quot;:&quot;8045&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8045&quot;]},&quot;label&quot;:&quot;Más profesionales&quot;}],&quot;code&quot;:&quot;8040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8040&quot;]},&quot;label&quot;:&quot;Profesionales&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8061&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8061&quot;]},&quot;label&quot;:&quot;Equipo ligero&quot;},{&quot;code&quot;:&quot;8062&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8062&quot;]},&quot;label&quot;:&quot;Grúas&quot;},{&quot;code&quot;:&quot;8063&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8063&quot;]},&quot;label&quot;:&quot;Maquinaria y equipo pesado&quot;}],&quot;code&quot;:&quot;8060&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8060&quot;]},&quot;label&quot;:&quot;Renta de maquinaria y equipo&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8081&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8081&quot;]},&quot;label&quot;:&quot;Celulares&quot;},{&quot;code&quot;:&quot;8082&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8082&quot;]},&quot;label&quot;:&quot;Computadoras y laptops&quot;},{&quot;code&quot;:&quot;8083&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8083&quot;]},&quot;label&quot;:&quot;Línea Blanca&quot;},{&quot;code&quot;:&quot;8084&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8084&quot;]},&quot;label&quot;:&quot;Aire acondicionado&quot;},{&quot;code&quot;:&quot;8085&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8085&quot;]},&quot;label&quot;:&quot;Equipos industriales&quot;},{&quot;code&quot;:&quot;8086&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8086&quot;]},&quot;label&quot;:&quot;Otros equipos electrónicos&quot;}],&quot;code&quot;:&quot;8080&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8080&quot;]},&quot;label&quot;:&quot;Reparación de equipo&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;8100&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8100&quot;]},&quot;label&quot;:&quot;Internet y Comunicaciones&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8121&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8121&quot;]},&quot;label&quot;:&quot;Mudanzas y fletes&quot;},{&quot;code&quot;:&quot;8122&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8122&quot;]},&quot;label&quot;:&quot;Transporte de pasajeros&quot;}],&quot;code&quot;:&quot;8120&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8120&quot;]},&quot;label&quot;:&quot;Transportes&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8141&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8141&quot;]},&quot;label&quot;:&quot;Foto y video&quot;},{&quot;code&quot;:&quot;8142&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8142&quot;]},&quot;label&quot;:&quot;Salon de eventos&quot;},{&quot;code&quot;:&quot;8143&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8143&quot;]},&quot;label&quot;:&quot;Organización de eventos&quot;},{&quot;code&quot;:&quot;8144&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8144&quot;]},&quot;label&quot;:&quot;Comida para fiestas&quot;},{&quot;code&quot;:&quot;8145&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8145&quot;]},&quot;label&quot;:&quot;Alquiler de Equipamiento&quot;},{&quot;code&quot;:&quot;8146&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8146&quot;]},&quot;label&quot;:&quot;Música para eventos&quot;}],&quot;code&quot;:&quot;8140&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8140&quot;]},&quot;label&quot;:&quot;Eventos&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8161&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8161&quot;]},&quot;label&quot;:&quot;Taller Mecánico&quot;},{&quot;code&quot;:&quot;8162&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8162&quot;]},&quot;label&quot;:&quot;Hojalatería y pintura&quot;},{&quot;code&quot;:&quot;8163&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8163&quot;]},&quot;label&quot;:&quot;Autolavado&quot;}],&quot;code&quot;:&quot;8160&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8160&quot;]},&quot;label&quot;:&quot;Mantenimiento de Autos&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8181&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8181&quot;]},&quot;label&quot;:&quot;Peluquería&quot;},{&quot;code&quot;:&quot;8182&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8182&quot;]},&quot;label&quot;:&quot;Depilación&quot;},{&quot;code&quot;:&quot;8183&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8183&quot;]},&quot;label&quot;:&quot;Manicura y Pedicura&quot;},{&quot;code&quot;:&quot;8184&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8184&quot;]},&quot;label&quot;:&quot;Maquillaje&quot;},{&quot;code&quot;:&quot;8185&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8185&quot;]},&quot;label&quot;:&quot;Masajes y Spa&quot;}],&quot;code&quot;:&quot;8180&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8180&quot;]},&quot;label&quot;:&quot;Cuidado personal, belleza y estética&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8201&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8201&quot;]},&quot;label&quot;:&quot;Diseño gráfico y digital&quot;},{&quot;code&quot;:&quot;8202&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8202&quot;]},&quot;label&quot;:&quot;Imprenta&quot;},{&quot;code&quot;:&quot;8203&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8203&quot;]},&quot;label&quot;:&quot;Promocionales&quot;}],&quot;code&quot;:&quot;8200&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8200&quot;]},&quot;label&quot;:&quot;Publicidad&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8221&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8221&quot;]},&quot;label&quot;:&quot;Veterinarias&quot;},{&quot;code&quot;:&quot;8222&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8222&quot;]},&quot;label&quot;:&quot;Paseadores y cuidadores&quot;},{&quot;code&quot;:&quot;8223&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8223&quot;]},&quot;label&quot;:&quot;Estética canina&quot;}],&quot;code&quot;:&quot;8220&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8220&quot;]},&quot;label&quot;:&quot;Servicios para mascota&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;8241&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8241&quot;]},&quot;label&quot;:&quot;Accesorios y servicios funerarios&quot;},{&quot;code&quot;:&quot;8242&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8242&quot;]},&quot;label&quot;:&quot;Fabricación&quot;},{&quot;code&quot;:&quot;8243&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8243&quot;]},&quot;label&quot;:&quot;Varios&quot;}],&quot;code&quot;:&quot;8240&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8240&quot;]},&quot;label&quot;:&quot;Otros Servicios&quot;}],&quot;code&quot;:&quot;8000&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;8000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/servicios.png&quot;,&quot;label&quot;:&quot;Servicios&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;code&quot;:&quot;9020&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;9020&quot;]},&quot;label&quot;:&quot;Venta y Traspasos&quot;},{&quot;all_label&quot;:&quot;Todas de la categoría&quot;,&quot;categories&quot;:[{&quot;code&quot;:&quot;9041&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;9041&quot;]},&quot;label&quot;:&quot;Alimentos&quot;},{&quot;code&quot;:&quot;9042&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;9042&quot;]},&quot;label&quot;:&quot;Mobiliario&quot;},{&quot;code&quot;:&quot;9043&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;9043&quot;]},&quot;label&quot;:&quot;Industrial&quot;}],&quot;code&quot;:&quot;9040&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;9040&quot;]},&quot;label&quot;:&quot;Equipamiento e Insumos&quot;}],&quot;code&quot;:&quot;9000&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;filter_value&quot;:{&quot;keys&quot;:[&quot;category&quot;],&quot;values&quot;:[&quot;9000&quot;]},&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/negocios_y_servicios.png&quot;,&quot;label&quot;:&quot;Negocios e Industria&quot;}]}
 Header: Server=nginx
 Content-Type=application/json; charset=utf-8
@@ -347,7 +231,7 @@ Vary=Accept-Encoding
 X-SCM-API-Version=1.1
 Cache-Control=max-age=31536000
 ETag=W/&quot;454f075aee4dc3c414ec981431530f58&quot;
-Date=Tue, 05 Jul 2022 21:22:53 GMT
+Date=Tue, 05 Jul 2022 21:22:57 GMT
 X-Frame-Options=DENY
 Content-Encoding=gzip
 Via=1.1 google
@@ -369,7 +253,7 @@ Body:
 Body Response: {&quot;data&quot;:{&quot;urls&quot;:[&quot;/anuncios/mexico/inmuebles&quot;,&quot;/anuncios/mexico/venta-inmuebles&quot;,&quot;/anuncios/mexico/renta-inmuebles&quot;,&quot;/anuncios/mexico/traspasos&quot;,&quot;/anuncios/mexico/rentas-vacacionales&quot;,&quot;/anuncios/mexico/vehiculos&quot;,&quot;/anuncios/mexico/autos-y-camionetas&quot;,&quot;/anuncios/mexico/motocicletas&quot;,&quot;/anuncios/mexico/accesorios-y-piezas-para-autos&quot;,&quot;/anuncios/mexico/camiones-comerciales-y-casas-rodantes&quot;,&quot;/anuncios/mexico/nautica-y-aereos&quot;,&quot;/anuncios/mexico/computacion-y-electronica&quot;,&quot;/anuncios/mexico/celulares-y-telefonos&quot;,&quot;/anuncios/mexico/audio-tv-video-y-fotografia&quot;,&quot;/anuncios/mexico/computadoras-y-accesorios&quot;,&quot;/anuncios/mexico/consolas-y-videojuegos&quot;,&quot;/anuncios/mexico/tu-hogar-y-tu&quot;,&quot;/anuncios/mexico/todo-para-tu-casa&quot;,&quot;/anuncios/mexico/jardin-herramientas-y-exteriores&quot;,&quot;/anuncios/mexico/ropa-y-calzado&quot;,&quot;/anuncios/mexico/bebes-y-ninos&quot;,&quot;/anuncios/mexico/accesorios-y-joyeria&quot;,&quot;/anuncios/mexico/muebles-y-decoracion&quot;,&quot;/anuncios/mexico/empleo-y-educacion&quot;,&quot;/anuncios/mexico/ofertas-de-empleo&quot;,&quot;/anuncios/mexico/busco-empleo&quot;,&quot;/anuncios/mexico/educacion&quot;,&quot;/anuncios/mexico/tiempo-libre&quot;,&quot;/anuncios/mexico/animales-y-mascotas&quot;,&quot;/anuncios/mexico/deportes-y-hobbies&quot;,&quot;/anuncios/mexico/instrumentos-musicales&quot;,&quot;/anuncios/mexico/coleccionismo&quot;,&quot;/anuncios/mexico/musica-libros-y-peliculas&quot;,&quot;/anuncios/mexico/salud-y-belleza&quot;,&quot;/anuncios/mexico/papeleria-escolares-y-oficina&quot;,&quot;/anuncios/mexico/servicios&quot;,&quot;/anuncios/mexico/remodelaciones-y-mantenimiento&quot;,&quot;/anuncios/mexico/profesionales&quot;,&quot;/anuncios/mexico/renta-de-maquinaria-y-equipo&quot;,&quot;/anuncios/mexico/reparacion-de-equipo&quot;,&quot;/anuncios/mexico/internet-y-comunicaciones&quot;,&quot;/anuncios/mexico/transportes&quot;,&quot;/anuncios/mexico/eventos&quot;,&quot;/anuncios/mexico/mantenimiento-de-autos&quot;,&quot;/anuncios/mexico/cuidado-personal-belleza-y-estetica&quot;,&quot;/anuncios/mexico/publicidad&quot;,&quot;/anuncios/mexico/servicios-para-mascota&quot;,&quot;/anuncios/mexico/otros-servicios&quot;,&quot;/anuncios/mexico/negocios-e-industria&quot;,&quot;/anuncios/mexico/venta-y-traspasos&quot;,&quot;/anuncios/mexico/equipamiento-e-insumos&quot;]}}
 
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:15 GMT
+Date=Thu, 07 Jul 2022 10:15:34 GMT
 Content-Type=application/json; charset=utf-8
 Vary=Accept-Encoding
 X-Frame-Options=DENY
@@ -377,7 +261,7 @@ Content-Encoding=gzip
 Via=1.1 google
 Alt-Svc=h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 Transfer-Encoding=chunked
-Time: 176
+Time: 315
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			&lt;none&gt;
@@ -385,7 +269,7 @@ Request params:	&lt;none&gt;
 Query params:	lang=es
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczQ3MjEuMEBtYWlsaW5hdG9yLmNvbTo1NDU3MS4xNjQ3MTYzODA0NQ==
+Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhczQzNzguMEBtYWlsaW5hdG9yLmNvbTo1NDY3Ny41NDk4OTcwMTY3NA==
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
@@ -393,7 +277,7 @@ Multiparts:		&lt;none&gt;
 Body:
 {
     &quot;account&quot;: {
-        &quot;email&quot;: &quot;agente_ventas4721.0@mailinator.com&quot;
+        &quot;email&quot;: &quot;agente_ventas4378.0@mailinator.com&quot;
     }
 }
 Body Response: {&quot;error&quot;:{&quot;code&quot;:&quot;ACCOUNT_VERIFICATION_REQUIRED&quot;}}
@@ -410,9 +294,9 @@ Headers:		Authorization=Basic dGVzdDFfYWdlbnRlQG1haWxpbmF0b3IuY29tOjEyMzQ1Ng==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;access_token&quot;:&quot;mc1x2f608a8e4c504dd587c0674a9a2d70defb810088_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4636.0&quot;,&quot;phone&quot;:&quot;1302220638&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+Body Response: {&quot;access_token&quot;:&quot;mc1x818cb56f961eae40c433a4af3e1b16c725fc6531_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4457.0&quot;,&quot;phone&quot;:&quot;1302690599&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:18 GMT
+Date=Thu, 07 Jul 2022 10:15:36 GMT
 Content-Type=application/json; charset=utf-8
 Vary=Accept-Encoding
 X-SCM-API-Version=1.1
@@ -421,8 +305,8 @@ Content-Encoding=gzip
 Via=1.1 google
 Alt-Svc=h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 Transfer-Encoding=chunked
-AccessToken: mc1x2f608a8e4c504dd587c0674a9a2d70defb810088_v2
-Time: 1410
+AccessToken: mc1x818cb56f961eae40c433a4af3e1b16c725fc6531_v2
+Time: 1335
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			&lt;none&gt;
@@ -437,7 +321,7 @@ Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
 {
-    &quot;access_token&quot;: &quot;mc1xa0b6e1974499af95831c5c3ae1953f4c13f1901d_v2&quot;,
+    &quot;access_token&quot;: &quot;mc1x78c4191446cfdc9f64a3a1d64a77e7be54b8c9fa_v2&quot;,
     &quot;account&quot;: {
         &quot;account_id&quot;: &quot;/private/accounts/11686178&quot;,
         &quot;can_publish&quot;: true,
@@ -446,8 +330,8 @@ Body:			&lt;none&gt;
         &quot;locations&quot;: [
             
         ],
-        &quot;name&quot;: &quot;agente_ventas4636.0&quot;,
-        &quot;phone&quot;: &quot;1302220638&quot;,
+        &quot;name&quot;: &quot;agente_ventas4457.0&quot;,
+        &quot;phone&quot;: &quot;1302690599&quot;,
         &quot;phone_hidden&quot;: false,
         &quot;professional&quot;: false,
         &quot;rfc&quot;: &quot;&quot;,
@@ -476,7 +360,7 @@ Body:			&lt;none&gt;
     &quot;token_type&quot;: &quot;tag:scmcoord.com,2013:api&quot;
 }
 Body Response: {
-    &quot;access_token&quot;: &quot;mc1xa0b6e1974499af95831c5c3ae1953f4c13f1901d_v2&quot;,
+    &quot;access_token&quot;: &quot;mc1x78c4191446cfdc9f64a3a1d64a77e7be54b8c9fa_v2&quot;,
     &quot;account&quot;: {
         &quot;account_id&quot;: &quot;/private/accounts/11686178&quot;,
         &quot;can_publish&quot;: true,
@@ -485,8 +369,8 @@ Body Response: {
         &quot;locations&quot;: [
             
         ],
-        &quot;name&quot;: &quot;agente_ventas4636.0&quot;,
-        &quot;phone&quot;: &quot;1302220638&quot;,
+        &quot;name&quot;: &quot;agente_ventas4457.0&quot;,
+        &quot;phone&quot;: &quot;1302690599&quot;,
         &quot;phone_hidden&quot;: false,
         &quot;professional&quot;: false,
         &quot;rfc&quot;: &quot;&quot;,
@@ -515,7 +399,7 @@ Body Response: {
     &quot;token_type&quot;: &quot;tag:scmcoord.com,2013:api&quot;
 }
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:20 GMT
+Date=Thu, 07 Jul 2022 10:15:38 GMT
 Content-Type=application/json; charset=utf-8
 Vary=Accept-Encoding
 X-SCM-API-Version=1.1
@@ -525,9 +409,9 @@ Via=1.1 google
 Alt-Svc=h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
 Transfer-Encoding=chunked
 status response: 200
-time response: 1456
-AccessToken: mc1xa0b6e1974499af95831c5c3ae1953f4c13f1901d_v2
-Access token: mc1xa0b6e1974499af95831c5c3ae1953f4c13f1901d_v2
+time response: 867
+AccessToken: mc1x78c4191446cfdc9f64a3a1d64a77e7be54b8c9fa_v2
+Access token: mc1x78c4191446cfdc9f64a3a1d64a77e7be54b8c9fa_v2
 Account id: /private/accounts/11686178
 uuid: d89b3d75-6e0f-49be-a5eb-81ad90835e68
 Request method:	GET
@@ -537,13 +421,13 @@ Request params:	&lt;none&gt;
 Query params:	lang=es
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=tag:scmcoord.com,2013:api mc1xa0b6e1974499af95831c5c3ae1953f4c13f1901d_v2
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1x78c4191446cfdc9f64a3a1d64a77e7be54b8c9fa_v2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4636.0&quot;,&quot;phone&quot;:&quot;1302220638&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;}}
+Body Response: {&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4457.0&quot;,&quot;phone&quot;:&quot;1302690599&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;}}
 Request method:	PATCH
 Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/11686178?lang=es
 Proxy:			&lt;none&gt;
@@ -551,7 +435,7 @@ Request params:	&lt;none&gt;
 Query params:	lang=es
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=tag:scmcoord.com,2013:api mc1xa0b6e1974499af95831c5c3ae1953f4c13f1901d_v2
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1x78c4191446cfdc9f64a3a1d64a77e7be54b8c9fa_v2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
@@ -588,21 +472,21 @@ Query params:	lang=es
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
 Headers:		Accept=application/json, text/plain, */*
-				Authorization=tag:scmcoord.com,2013:api mc1xa0b6e1974499af95831c5c3ae1953f4c13f1901d_v2
+				Authorization=tag:scmcoord.com,2013:api mc1x78c4191446cfdc9f64a3a1d64a77e7be54b8c9fa_v2
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:
 {
     &quot;account&quot;: {
-        &quot;name&quot;: &quot;agente_ventas4721.0@mailinator.com&quot;,
-        &quot;phone&quot;: &quot;1532508014&quot;,
+        &quot;name&quot;: &quot;agente_ventas4378.0@mailinator.com&quot;,
+        &quot;phone&quot;: &quot;1974448202&quot;,
         &quot;professional&quot;: false
     }
 }
-Body Response: {&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4721.0&quot;,&quot;phone&quot;:&quot;1532508014&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;}}
-Telefono: 1532508014
-Telefono request: 1532508014
+Body Response: {&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4378.0&quot;,&quot;phone&quot;:&quot;1974448202&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;}}
+Telefono: 1974448202
+Telefono request: 1974448202
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			&lt;none&gt;
@@ -616,12 +500,12 @@ Headers:		Authorization=Basic dGVzdDFfYWdlbnRlQG1haWxpbmF0b3IuY29tOjEyMzQ1Ng==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;access_token&quot;:&quot;mc1x64573a7746531b8e5534ba49f905df0799bb116b_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4721.0&quot;,&quot;phone&quot;:&quot;1532508014&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-AccessToken: mc1x64573a7746531b8e5534ba49f905df0799bb116b_v2
-Access token: mc1x64573a7746531b8e5534ba49f905df0799bb116b_v2
+Body Response: {&quot;access_token&quot;:&quot;mc1x044cbf29a8dec4e698a389653e2ce285c573e34a_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4378.0&quot;,&quot;phone&quot;:&quot;1974448202&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+AccessToken: mc1x044cbf29a8dec4e698a389653e2ce285c573e34a_v2
+Access token: mc1x044cbf29a8dec4e698a389653e2ce285c573e34a_v2
 Account id: /private/accounts/11686178
 uuid: d89b3d75-6e0f-49be-a5eb-81ad90835e68
-Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg2NDU3M2E3NzQ2NTMxYjhlNTUzNGJhNDlmOTA1ZGYwNzk5YmIxMTZiX3Yy
+Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgwNDRjYmYyOWE4ZGVjNGU2OThhMzg5NjUzZTJjZTI4NWM1NzNlMzRhX3Yy
 Endpoint: https://webapi.segundamano.mx/v2/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/upRequest method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/up
 Proxy:			&lt;none&gt;
@@ -629,7 +513,7 @@ Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg2NDU3M2E3NzQ2NTMxYjhlNTUzNGJhNDlmOTA1ZGYwNzk5YmIxMTZiX3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgwNDRjYmYyOWE4ZGVjNGU2OThhMzg5NjUzZTJjZTI4NWM1NzNlMzRhX3Yy
 				Accept=application/json, text/plain, */*
 				x-source=PHOENIX_DESKTOP
 				Content-Type=application/json
@@ -648,8 +532,8 @@ Body:
     &quot;show_phone&quot;: &quot;false&quot;,
     &quot;contact_phone&quot;: &quot;5544345678&quot;
 }
-Body Response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74194749&quot;,&quot;subject&quot;:&quot;Mudanzas y fletes baratos Junio&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8120&quot;,&quot;label&quot;:&quot;Transportes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8000&quot;,&quot;label&quot;:&quot;Servicios&quot;}}},&quot;region&quot;:{&quot;code&quot;:&quot;5&quot;,&quot;label&quot;:&quot;Baja California Sur&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;51&quot;,&quot;label&quot;:&quot;Comondú&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;140000&quot;,&quot;label&quot;:&quot;Otra&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:1}},&quot;payment_info&quot;:{&quot;payment_required&quot;:false,&quot;title&quot;:&quot;¡Vende más rápido con los Productos Premium!&quot;,&quot;description&quot;:&quot;Elige la opción que mejor se ajuste a tus necesidades&quot;,&quot;products&quot;:[{&quot;id&quot;:&quot;serv_free&quot;,&quot;name&quot;:&quot;Anuncio básico&quot;,&quot;label&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;description&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;price&quot;:0,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_tokens&quot;]},{&quot;id&quot;:&quot;serv_daily&quot;,&quot;name&quot;:&quot;Subir Diario&quot;,&quot;label&quot;:&quot;Recibe hasta 5 veces más contactos en 7 días&quot;,&quot;description&quot;:&quot;&quot;,&quot;price&quot;:120,&quot;credits&quot;:120,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]},{&quot;id&quot;:&quot;serv_premiumpackage_2&quot;,&quot;name&quot;:&quot;Subir diario y Posición principal&quot;,&quot;label&quot;:&quot;Recibe hasta 12 veces más contactos&quot;,&quot;description&quot;:&quot;Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días&quot;,&quot;price&quot;:220,&quot;credits&quot;:220,&quot;most_popular&quot;:true,&quot;active&quot;:true,&quot;tag&quot;:{&quot;slug&quot;:&quot;tag_recommended&quot;,&quot;name&quot;:&quot;RECOMENDADO&quot;},&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]}]}}}
-ad_id: 74194749
+Body Response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74194765&quot;,&quot;subject&quot;:&quot;Mudanzas y fletes baratos Junio&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8120&quot;,&quot;label&quot;:&quot;Transportes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8000&quot;,&quot;label&quot;:&quot;Servicios&quot;}}},&quot;region&quot;:{&quot;code&quot;:&quot;5&quot;,&quot;label&quot;:&quot;Baja California Sur&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;51&quot;,&quot;label&quot;:&quot;Comondú&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;140000&quot;,&quot;label&quot;:&quot;Otra&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:1}},&quot;payment_info&quot;:{&quot;payment_required&quot;:false,&quot;title&quot;:&quot;¡Vende más rápido con los Productos Premium!&quot;,&quot;description&quot;:&quot;Elige la opción que mejor se ajuste a tus necesidades&quot;,&quot;products&quot;:[{&quot;id&quot;:&quot;serv_free&quot;,&quot;name&quot;:&quot;Anuncio básico&quot;,&quot;label&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;description&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;price&quot;:0,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_tokens&quot;]},{&quot;id&quot;:&quot;serv_daily&quot;,&quot;name&quot;:&quot;Subir Diario&quot;,&quot;label&quot;:&quot;Recibe hasta 5 veces más contactos en 7 días&quot;,&quot;description&quot;:&quot;&quot;,&quot;price&quot;:120,&quot;credits&quot;:120,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_paypal&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;]},{&quot;id&quot;:&quot;serv_premiumpackage_2&quot;,&quot;name&quot;:&quot;Subir diario y Posición principal&quot;,&quot;label&quot;:&quot;Recibe hasta 12 veces más contactos&quot;,&quot;description&quot;:&quot;Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días&quot;,&quot;price&quot;:220,&quot;credits&quot;:220,&quot;most_popular&quot;:true,&quot;active&quot;:true,&quot;tag&quot;:{&quot;slug&quot;:&quot;tag_recommended&quot;,&quot;name&quot;:&quot;RECOMENDADO&quot;},&quot;payment_methods&quot;:[&quot;pay_method_paypal&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;]}]}}}
+ad_id: 74194765
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/11686178/klfst?status=pending&amp;lim=10&amp;o=0&amp;query=&amp;lang=es
 Proxy:			&lt;none&gt;
@@ -661,12 +545,12 @@ Query params:	status=pending
 				lang=es
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=tag:scmcoord.com,2013:api mc1x64573a7746531b8e5534ba49f905df0799bb116b_v2
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1x044cbf29a8dec4e698a389653e2ce285c573e34a_v2
 				Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;counter_map&quot;:{&quot;all&quot;:8,&quot;pending&quot;:8},&quot;private_ads&quot;:[{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194749&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/servicios.png&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;},&quot;subject&quot;:&quot;Mudanzas y fletes baratos Junio&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194747&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;6040&quot;,&quot;color&quot;:&quot;E1E1E1&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/empleo_y_educacion.png&quot;,&quot;label&quot;:&quot;Busco empleo&quot;},&quot;subject&quot;:&quot;Busco trabajo medio tiempo 6 niÃ±os&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194746&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/servicios.png&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;},&quot;subject&quot;:&quot;Mudanzas y fletes baratos Julio&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194709&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;6040&quot;,&quot;color&quot;:&quot;E1E1E1&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/empleo_y_educacion.png&quot;,&quot;label&quot;:&quot;Busco empleo&quot;},&quot;subject&quot;:&quot;Busco trabajo medio tiempo 6 niÃ±os&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194705&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/servicios.png&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;},&quot;subject&quot;:&quot;Mudanzas y fletes baratos Julio&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194682&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;6040&quot;,&quot;color&quot;:&quot;E1E1E1&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/empleo_y_educacion.png&quot;,&quot;label&quot;:&quot;Busco empleo&quot;},&quot;subject&quot;:&quot;Busco trabajo medio tiempo 6 niÃ±os&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194677&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/servicios.png&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;},&quot;subject&quot;:&quot;Mudanzas y fletes baratos Julio&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194660&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;6040&quot;,&quot;color&quot;:&quot;E1E1E1&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/empleo_y_educacion.png&quot;,&quot;label&quot;:&quot;Busco empleo&quot;},&quot;subject&quot;:&quot;Busco trabajo medio tiempo 6 niÃ±os&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}}]}
+Body Response: {&quot;counter_map&quot;:{&quot;all&quot;:3,&quot;pending&quot;:3},&quot;private_ads&quot;:[{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194765&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/servicios.png&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;},&quot;subject&quot;:&quot;Mudanzas y fletes baratos Junio&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194760&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;6040&quot;,&quot;color&quot;:&quot;E1E1E1&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/empleo_y_educacion.png&quot;,&quot;label&quot;:&quot;Busco empleo&quot;},&quot;subject&quot;:&quot;Busco trabajo medio tiempo 6 niÃ±os&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}},{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;/private/accounts/11686178/ads/74194759&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;color&quot;:&quot;FDE8DE&quot;,&quot;icon&quot;:&quot;http://www.segundamano.mx/img/nga/servicios.png&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;},&quot;subject&quot;:&quot;Mudanzas y fletes baratos Julio&quot;},&quot;labelmap&quot;:{&quot;category&quot;:&quot;Categoría&quot;,&quot;subject&quot;:&quot;Título&quot;},&quot;statistics&quot;:{&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}}}]}
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			&lt;none&gt;
@@ -680,20 +564,20 @@ Headers:		Authorization=Basic dGVzdDFfYWdlbnRlQG1haWxpbmF0b3IuY29tOjEyMzQ1Ng==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;access_token&quot;:&quot;mc1xc72367e25c000eb1ac969e5de869292612eee1d9_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4721.0&quot;,&quot;phone&quot;:&quot;1532508014&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-AccessToken: mc1xc72367e25c000eb1ac969e5de869292612eee1d9_v2
-Access token: mc1xc72367e25c000eb1ac969e5de869292612eee1d9_v2
+Body Response: {&quot;access_token&quot;:&quot;mc1x59616eecb65bb45267531cd93747d358113379c9_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4378.0&quot;,&quot;phone&quot;:&quot;1974448202&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+AccessToken: mc1x59616eecb65bb45267531cd93747d358113379c9_v2
+Access token: mc1x59616eecb65bb45267531cd93747d358113379c9_v2
 Account id: /private/accounts/11686178
 uuid: d89b3d75-6e0f-49be-a5eb-81ad90835e68
-Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhjNzIzNjdlMjVjMDAwZWIxYWM5NjllNWRlODY5MjkyNjEyZWVlMWQ5X3Yy
-Endpoint: https://webapi.segundamano.mx/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/up/74194749Request method:	PUT
-Request URI:	https://webapi.segundamano.mx/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/up/74194749
+Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg1OTYxNmVlY2I2NWJiNDUyNjc1MzFjZDkzNzQ3ZDM1ODExMzM3OWM5X3Yy
+Endpoint: https://webapi.segundamano.mx/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/up/74194765Request method:	PUT
+Request URI:	https://webapi.segundamano.mx/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/up/74194765
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhjNzIzNjdlMjVjMDAwZWIxYWM5NjllNWRlODY5MjkyNjEyZWVlMWQ5X3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg1OTYxNmVlY2I2NWJiNDUyNjc1MzFjZDkzNzQ3ZDM1ODExMzM3OWM5X3Yy
 				Accept=application/json, text/plain, */*
 				x-source=PHOENIX_DESKTOP
 				Content-Type=application/json
@@ -712,7 +596,7 @@ Body:
     &quot;show_phone&quot;: &quot;false&quot;,
     &quot;contact_phone&quot;: &quot;5544345678&quot;
 }
-Body Response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74194749&quot;,&quot;subject&quot;:&quot;Mudanzas y fletes baratos Julio&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8120&quot;,&quot;label&quot;:&quot;Transportes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8000&quot;,&quot;label&quot;:&quot;Servicios&quot;}}},&quot;region&quot;:{&quot;code&quot;:&quot;5&quot;,&quot;label&quot;:&quot;Baja California Sur&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;51&quot;,&quot;label&quot;:&quot;Comondú&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;140000&quot;,&quot;label&quot;:&quot;Otra&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:1}}}}
+Body Response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74194765&quot;,&quot;subject&quot;:&quot;Mudanzas y fletes baratos Julio&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;8121&quot;,&quot;label&quot;:&quot;Mudanzas y fletes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8120&quot;,&quot;label&quot;:&quot;Transportes&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;8000&quot;,&quot;label&quot;:&quot;Servicios&quot;}}},&quot;region&quot;:{&quot;code&quot;:&quot;5&quot;,&quot;label&quot;:&quot;Baja California Sur&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;51&quot;,&quot;label&quot;:&quot;Comondú&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;140000&quot;,&quot;label&quot;:&quot;Otra&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:1}}}}
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			&lt;none&gt;
@@ -726,20 +610,20 @@ Headers:		Authorization=Basic dGVzdDFfYWdlbnRlQG1haWxpbmF0b3IuY29tOjEyMzQ1Ng==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;access_token&quot;:&quot;mc1xf139a79339df71b97089d58486bb65a4e3bb35d2_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4721.0&quot;,&quot;phone&quot;:&quot;1532508014&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-AccessToken: mc1xf139a79339df71b97089d58486bb65a4e3bb35d2_v2
-Access token: mc1xf139a79339df71b97089d58486bb65a4e3bb35d2_v2
+Body Response: {&quot;access_token&quot;:&quot;mc1xfd8b253574ac7b1aaa739d229d2866cd4e7a2cd6_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4378.0&quot;,&quot;phone&quot;:&quot;1974448202&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+AccessToken: mc1xfd8b253574ac7b1aaa739d229d2866cd4e7a2cd6_v2
+Access token: mc1xfd8b253574ac7b1aaa739d229d2866cd4e7a2cd6_v2
 Account id: /private/accounts/11686178
 uuid: d89b3d75-6e0f-49be-a5eb-81ad90835e68
-Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmMTM5YTc5MzM5ZGY3MWI5NzA4OWQ1ODQ4NmJiNjVhNGUzYmIzNWQyX3Yy
-Endpoint URL https://webapi.segundamano.mx/nga/api/v1/private/accounts/11686178/klfst/74194749 Request method:	DELETE
-Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/11686178/klfst/74194749
+Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmZDhiMjUzNTc0YWM3YjFhYWE3MzlkMjI5ZDI4NjZjZDRlN2EyY2Q2X3Yy
+Endpoint URL https://webapi.segundamano.mx/nga/api/v1/private/accounts/11686178/klfst/74194765 Request method:	DELETE
+Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts/11686178/klfst/74194765
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=tag:scmcoord.com,2013:api mc1xf139a79339df71b97089d58486bb65a4e3bb35d2_v2
+Headers:		Authorization=tag:scmcoord.com,2013:api mc1xfd8b253574ac7b1aaa739d229d2866cd4e7a2cd6_v2
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		&lt;none&gt;
@@ -763,18 +647,18 @@ Form params:	contact=Vendedor Casas Durango
 				exteriorInfo=DR Erazo
 				region=16
 				municipality=755
-				alias=CASA DE LAS ARTESANIAS
+				alias=CASA DE LAS ARTESANIAS SUR
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmMTM5YTc5MzM5ZGY3MWI5NzA4OWQ1ODQ4NmJiNjVhNGUzYmIzNWQyX3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmZDhiMjUzNTc0YWM3YjFhYWE3MzlkMjI5ZDI4NjZjZDRlN2EyY2Q2X3Yy
 				Accept=*/*
 				Content-Type=application/x-www-form-urlencoded; charset=UTF-8
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;addressID&quot;:&quot;1e8bf226-fdce-11ec-ba0b-2bad1970265c&quot;}
-Address: 1e8bf226-fdce-11ec-ba0b-2bad1970265c
+Body Response: {&quot;addressID&quot;:&quot;528705d0-fdcd-11ec-ba0b-ef1c0ca422ce&quot;}
+Address: 528705d0-fdcd-11ec-ba0b-ef1c0ca422ce
 Request method:	PUT
-Request URI:	https://webapi.segundamano.mx/addresses/v1/modify/1e8bf226-fdce-11ec-ba0b-2bad1970265c
+Request URI:	https://webapi.segundamano.mx/addresses/v1/modify/528705d0-fdcd-11ec-ba0b-ef1c0ca422ce
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
@@ -783,28 +667,28 @@ Form params:	zipCode=06720
 				region=11
 				municipality=292
 				area=7488
-				alias=Depto
+				alias=Depto en renta
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmMTM5YTc5MzM5ZGY3MWI5NzA4OWQ1ODQ4NmJiNjVhNGUzYmIzNWQyX3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmZDhiMjUzNTc0YWM3YjFhYWE3MzlkMjI5ZDI4NjZjZDRlN2EyY2Q2X3Yy
 				Accept=*/*
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;message&quot;:&quot;1e8bf226-fdce-11ec-ba0b-2bad1970265c modified correctly&quot;}
+Body Response: {&quot;message&quot;:&quot;528705d0-fdcd-11ec-ba0b-ef1c0ca422ce modified correctly&quot;}
 Request method:	DELETE
-Request URI:	https://webapi.segundamano.mx/addresses/v1/delete/1e8bf226-fdce-11ec-ba0b-2bad1970265c
+Request URI:	https://webapi.segundamano.mx/addresses/v1/delete/528705d0-fdcd-11ec-ba0b-ef1c0ca422ce
 Proxy:			&lt;none&gt;
 Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmMTM5YTc5MzM5ZGY3MWI5NzA4OWQ1ODQ4NmJiNjVhNGUzYmIzNWQyX3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmZDhiMjUzNTc0YWM3YjFhYWE3MzlkMjI5ZDI4NjZjZDRlN2EyY2Q2X3Yy
 				Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;error&quot;:&quot;Error deleting Address: Invalid address to delete&quot;}
+Body Response: {&quot;message&quot;:&quot;528705d0-fdcd-11ec-ba0b-ef1c0ca422ce deleted correctly&quot;}
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/tokens/v1/public/balance/detail/d89b3d75-6e0f-49be-a5eb-81ad90835e68
 Proxy:			&lt;none&gt;
@@ -812,16 +696,16 @@ Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmMTM5YTc5MzM5ZGY3MWI5NzA4OWQ1ODQ4NmJiNjVhNGUzYmIzNWQyX3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhmZDhiMjUzNTc0YWM3YjFhYWE3MzlkMjI5ZDI4NjZjZDRlN2EyY2Q2X3Yy
 				Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Time: 301
+Time: 404
 Body Response: {&quot;data&quot;:{&quot;balance&quot;:[{&quot;token-type&quot;:&quot;token_if_re_free&quot;,&quot;description&quot;:&quot;Vales de Inmuebles - Gratis&quot;,&quot;balance&quot;:2,&quot;detail&quot;:[{&quot;type&quot;:&quot;income&quot;,&quot;token_id&quot;:&quot;token_if_re_free&quot;,&quot;source&quot;:&quot;new-account&quot;,&quot;amount&quot;:2,&quot;created_at&quot;:&quot;2022-06-10T00:50:31.552062Z&quot;,&quot;expires&quot;:338,&quot;reference&quot;:&quot;&quot;}]},{&quot;token-type&quot;:&quot;token_if_cars_free&quot;,&quot;description&quot;:&quot;Vales de Autos y Camionetas - Gratis&quot;,&quot;balance&quot;:2,&quot;detail&quot;:[{&quot;type&quot;:&quot;income&quot;,&quot;token_id&quot;:&quot;token_if_cars_free&quot;,&quot;source&quot;:&quot;new-account&quot;,&quot;amount&quot;:2,&quot;created_at&quot;:&quot;2022-06-10T00:50:31.642125Z&quot;,&quot;expires&quot;:338,&quot;reference&quot;:&quot;&quot;}]},{&quot;token-type&quot;:&quot;token_if_motorcycles_free&quot;,&quot;description&quot;:&quot;Vales de Motocicletas - Gratis&quot;,&quot;balance&quot;:2,&quot;detail&quot;:[{&quot;type&quot;:&quot;income&quot;,&quot;token_id&quot;:&quot;token_if_motorcycles_free&quot;,&quot;source&quot;:&quot;new-account&quot;,&quot;amount&quot;:2,&quot;created_at&quot;:&quot;2022-06-10T00:50:31.706636Z&quot;,&quot;expires&quot;:338,&quot;reference&quot;:&quot;&quot;}]},{&quot;token-type&quot;:&quot;token_if_car_parts_free&quot;,&quot;description&quot;:&quot;Vales de Autopartes - Gratis&quot;,&quot;balance&quot;:2,&quot;detail&quot;:[{&quot;type&quot;:&quot;income&quot;,&quot;token_id&quot;:&quot;token_if_car_parts_free&quot;,&quot;source&quot;:&quot;new-account&quot;,&quot;amount&quot;:2,&quot;created_at&quot;:&quot;2022-06-10T00:50:31.738693Z&quot;,&quot;expires&quot;:338,&quot;reference&quot;:&quot;&quot;}]}]}}
 
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:35 GMT
+Date=Thu, 07 Jul 2022 10:15:53 GMT
 Content-Type=application/json; charset=utf-8
 Vary=Accept-Encoding
 X-Frame-Options=DENY
@@ -848,7 +732,7 @@ Body:
 }
 Body Response: {&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;}}
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:36 GMT
+Date=Thu, 07 Jul 2022 10:15:53 GMT
 Content-Type=application/json; charset=utf-8
 Vary=Accept-Encoding
 X-SCM-API-Version=1
@@ -870,12 +754,12 @@ Headers:		Authorization=Basic dGVzdDFfYWdlbnRlQG1haWxpbmF0b3IuY29tOjEyMzQ1Ng==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;access_token&quot;:&quot;mc1x1b3606f64862cb44a503e04b66b3afbe812bbee6_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4721.0&quot;,&quot;phone&quot;:&quot;1532508014&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-AccessToken: mc1x1b3606f64862cb44a503e04b66b3afbe812bbee6_v2
-Access token: mc1x1b3606f64862cb44a503e04b66b3afbe812bbee6_v2
+Body Response: {&quot;access_token&quot;:&quot;mc1x235139483980b6ff51c553301e9733316b42ae65_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4378.0&quot;,&quot;phone&quot;:&quot;1974448202&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+AccessToken: mc1x235139483980b6ff51c553301e9733316b42ae65_v2
+Access token: mc1x235139483980b6ff51c553301e9733316b42ae65_v2
 Account id: /private/accounts/11686178
 uuid: d89b3d75-6e0f-49be-a5eb-81ad90835e68
-Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgxYjM2MDZmNjQ4NjJjYjQ0YTUwM2UwNGI2NmIzYWZiZTgxMmJiZWU2X3Yy
+Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgyMzUxMzk0ODM5ODBiNmZmNTFjNTUzMzAxZTk3MzMzMTZiNDJhZTY1X3Yy
 Endpoint: https://webapi.segundamano.mx/v2/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/upRequest method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/d89b3d75-6e0f-49be-a5eb-81ad90835e68/up
 Proxy:			&lt;none&gt;
@@ -883,7 +767,7 @@ Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgxYjM2MDZmNjQ4NjJjYjQ0YTUwM2UwNGI2NmIzYWZiZTgxMmJiZWU2X3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgyMzUxMzk0ODM5ODBiNmZmNTFjNTUzMzAxZTk3MzMzMTZiNDJhZTY1X3Yy
 				Accept=application/json, text/plain, */*
 				x-source=PHOENIX_DESKTOP
 				Content-Type=application/json
@@ -902,8 +786,8 @@ Body:
     &quot;show_phone&quot;: &quot;false&quot;,
     &quot;contact_phone&quot;: &quot;5512345678&quot;
 }
-Body Response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74194750&quot;,&quot;subject&quot;:&quot;Busco trabajo medio tiempo 6 niÃ±os&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;6040&quot;,&quot;label&quot;:&quot;Busco empleo&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;6000&quot;,&quot;label&quot;:&quot;Empleo y educación&quot;}},&quot;region&quot;:{&quot;code&quot;:&quot;9&quot;,&quot;label&quot;:&quot;Chiapas&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;86186&quot;,&quot;label&quot;:&quot;Capitán Luis Ángel Vidal&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;146072&quot;,&quot;label&quot;:&quot;Nuevo Guayabal&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:200}},&quot;payment_info&quot;:{&quot;payment_required&quot;:false,&quot;title&quot;:&quot;¡Vende más rápido con los Productos Premium!&quot;,&quot;description&quot;:&quot;Elige la opción que mejor se ajuste a tus necesidades&quot;,&quot;products&quot;:[{&quot;id&quot;:&quot;serv_free&quot;,&quot;name&quot;:&quot;Anuncio básico&quot;,&quot;label&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;description&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;price&quot;:0,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_tokens&quot;]},{&quot;id&quot;:&quot;serv_pole&quot;,&quot;name&quot;:&quot;Posición Principal&quot;,&quot;label&quot;:&quot;Recibe 4 veces más contactos&quot;,&quot;description&quot;:&quot;&quot;,&quot;price&quot;:200,&quot;credits&quot;:200,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]},{&quot;id&quot;:&quot;serv_premiumpackage_2&quot;,&quot;name&quot;:&quot;Subir diario y Posición principal&quot;,&quot;label&quot;:&quot;Recibe hasta 12 veces más contactos&quot;,&quot;description&quot;:&quot;Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días&quot;,&quot;price&quot;:220,&quot;credits&quot;:220,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]}]}}}
-ad_id: 74194750
+Body Response: {&quot;data&quot;:{&quot;ad&quot;:{&quot;ad_id&quot;:&quot;74194766&quot;,&quot;subject&quot;:&quot;Busco trabajo medio tiempo 6 niÃ±os&quot;,&quot;category&quot;:{&quot;code&quot;:&quot;6040&quot;,&quot;label&quot;:&quot;Busco empleo&quot;,&quot;parent&quot;:{&quot;code&quot;:&quot;6000&quot;,&quot;label&quot;:&quot;Empleo y educación&quot;}},&quot;region&quot;:{&quot;code&quot;:&quot;9&quot;,&quot;label&quot;:&quot;Chiapas&quot;},&quot;municipality&quot;:{&quot;code&quot;:&quot;86186&quot;,&quot;label&quot;:&quot;Capitán Luis Ángel Vidal&quot;},&quot;area&quot;:{&quot;code&quot;:&quot;146072&quot;,&quot;label&quot;:&quot;Nuevo Guayabal&quot;},&quot;price&quot;:{&quot;currency&quot;:&quot;MXN&quot;,&quot;value&quot;:200}},&quot;payment_info&quot;:{&quot;payment_required&quot;:false,&quot;title&quot;:&quot;¡Vende más rápido con los Productos Premium!&quot;,&quot;description&quot;:&quot;Elige la opción que mejor se ajuste a tus necesidades&quot;,&quot;products&quot;:[{&quot;id&quot;:&quot;serv_free&quot;,&quot;name&quot;:&quot;Anuncio básico&quot;,&quot;label&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;description&quot;:&quot;Anuncio con exposición regular, tendrás menos visitas&quot;,&quot;price&quot;:0,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_tokens&quot;]},{&quot;id&quot;:&quot;serv_pole&quot;,&quot;name&quot;:&quot;Posición Principal&quot;,&quot;label&quot;:&quot;Recibe 4 veces más contactos&quot;,&quot;description&quot;:&quot;&quot;,&quot;price&quot;:200,&quot;credits&quot;:200,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]},{&quot;id&quot;:&quot;serv_premiumpackage_2&quot;,&quot;name&quot;:&quot;Subir diario y Posición principal&quot;,&quot;label&quot;:&quot;Recibe hasta 12 veces más contactos&quot;,&quot;description&quot;:&quot;Sube tu anuncio todos los días durante 7 días y pon tu anuncio en la primera posición durante 3 días&quot;,&quot;price&quot;:220,&quot;credits&quot;:220,&quot;most_popular&quot;:false,&quot;active&quot;:true,&quot;payment_methods&quot;:[&quot;pay_method_credit&quot;,&quot;pay_method_points&quot;,&quot;pay_method_oxxo&quot;,&quot;pay_method_paypal&quot;]}]}}}
+ad_id: 74194766
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/shops/api/v1/public/shops?limit=15&amp;search=carros
 Proxy:			&lt;none&gt;
@@ -916,11 +800,11 @@ Headers:		Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Time: 196
+Time: 296
 Body Response: {&quot;total_count&quot;:1,&quot;list_shops&quot;:[{&quot;id&quot;:2314,&quot;ad_ids&quot;:[937724521,937927458,937954933,938051750,938211894],&quot;ads_counter&quot;:23,&quot;category&quot;:{&quot;code&quot;:&quot;2000&quot;},&quot;locations&quot;:[{&quot;code&quot;:&quot;16&quot;,&quot;key&quot;:&quot;region&quot;,&quot;locations&quot;:[{&quot;code&quot;:&quot;589&quot;,&quot;key&quot;:&quot;municipality&quot;}]}],&quot;name&quot;:&quot;Autos providencia gdl&quot;,&quot;thumbnail&quot;:{&quot;base_url&quot;:&quot;https://img.segundamano.mx&quot;,&quot;height&quot;:600,&quot;media_id&quot;:&quot;95c93ed4-0c48-4899-a4c2-69c299a43bf4&quot;,&quot;path&quot;:&quot;shops/95c93ed4-0c48-4899-a4c2-69c299a43bf4.jpg&quot;,&quot;width&quot;:600},&quot;cover&quot;:{&quot;base_url&quot;:&quot;https://img.segundamano.mx&quot;,&quot;height&quot;:600,&quot;media_id&quot;:&quot;d3a79d65-b741-471c-9e41-a2d397182a33&quot;,&quot;path&quot;:&quot;shops/d3a79d65-b741-471c-9e41-a2d397182a33.jpg&quot;,&quot;width&quot;:1630}}]}
 
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:40 GMT
+Date=Thu, 07 Jul 2022 10:15:58 GMT
 Content-Type=application/json; charset=utf-8
 Vary=Accept-Encoding
 Set-Cookie=s_site_id=canary;Domain=.segundamano.mx;Path=/;Max-Age=31536000
@@ -944,12 +828,12 @@ Headers:		Authorization=Basic dGVzdDFfYWdlbnRlQG1haWxpbmF0b3IuY29tOjEyMzQ1Ng==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;access_token&quot;:&quot;mc1xdaed4a258f5e41ffdf47d8206e0700487bdf5d9a_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4721.0&quot;,&quot;phone&quot;:&quot;1532508014&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-AccessToken: mc1xdaed4a258f5e41ffdf47d8206e0700487bdf5d9a_v2
-Access token: mc1xdaed4a258f5e41ffdf47d8206e0700487bdf5d9a_v2
+Body Response: {&quot;access_token&quot;:&quot;mc1x687bf6beed11882eba15f41e7e7bd182ad55c59e_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4378.0&quot;,&quot;phone&quot;:&quot;1974448202&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+AccessToken: mc1x687bf6beed11882eba15f41e7e7bd182ad55c59e_v2
+Access token: mc1x687bf6beed11882eba15f41e7e7bd182ad55c59e_v2
 Account id: /private/accounts/11686178
 uuid: d89b3d75-6e0f-49be-a5eb-81ad90835e68
-Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhkYWVkNGEyNThmNWU0MWZmZGY0N2Q4MjA2ZTA3MDA0ODdiZGY1ZDlhX3Yy
+Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg2ODdiZjZiZWVkMTE4ODJlYmExNWY0MWU3ZTdiZDE4MmFkNTVjNTllX3Yy
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/delivery/v1/seller/order
 Proxy:			&lt;none&gt;
@@ -957,15 +841,15 @@ Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXhkYWVkNGEyNThmNWU0MWZmZGY0N2Q4MjA2ZTA3MDA0ODdiZGY1ZDlhX3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg2ODdiZjZiZWVkMTE4ODJlYmExNWY0MWU3ZTdiZDE4MmFkNTVjNTllX3Yy
 				Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Time: 295
+Time: 259
 Body Response: {&quot;orders&quot;:[]}
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:41 GMT
+Date=Thu, 07 Jul 2022 10:15:59 GMT
 Content-Type=application/json
 Vary=Accept-Encoding
 X-Frame-Options=DENY
@@ -986,12 +870,12 @@ Headers:		Authorization=Basic dGVzdDFfYWdlbnRlQG1haWxpbmF0b3IuY29tOjEyMzQ1Ng==
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Body Response: {&quot;access_token&quot;:&quot;mc1x497a39f7af6fec24eb005c078a88296c54a5c946_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4721.0&quot;,&quot;phone&quot;:&quot;1532508014&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
-AccessToken: mc1x497a39f7af6fec24eb005c078a88296c54a5c946_v2
-Access token: mc1x497a39f7af6fec24eb005c078a88296c54a5c946_v2
+Body Response: {&quot;access_token&quot;:&quot;mc1x13676ae858744640f52c34561ec58591e8e7a8d3_v2&quot;,&quot;account&quot;:{&quot;account_id&quot;:&quot;/private/accounts/11686178&quot;,&quot;can_publish&quot;:true,&quot;email&quot;:&quot;test1_agente@mailinator.com&quot;,&quot;email_verified&quot;:true,&quot;locations&quot;:[],&quot;name&quot;:&quot;agente_ventas4378.0&quot;,&quot;phone&quot;:&quot;1974448202&quot;,&quot;phone_hidden&quot;:false,&quot;professional&quot;:false,&quot;rfc&quot;:&quot;&quot;,&quot;uuid&quot;:&quot;d89b3d75-6e0f-49be-a5eb-81ad90835e68&quot;},&quot;ad_events&quot;:{&quot;24h&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;7d&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0},&quot;total&quot;:{&quot;calls&quot;:0,&quot;mails&quot;:0,&quot;phone_views&quot;:0,&quot;views&quot;:0}},&quot;token_type&quot;:&quot;tag:scmcoord.com,2013:api&quot;}
+AccessToken: mc1x13676ae858744640f52c34561ec58591e8e7a8d3_v2
+Access token: mc1x13676ae858744640f52c34561ec58591e8e7a8d3_v2
 Account id: /private/accounts/11686178
 uuid: d89b3d75-6e0f-49be-a5eb-81ad90835e68
-Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg0OTdhMzlmN2FmNmZlYzI0ZWIwMDVjMDc4YTg4Mjk2YzU0YTVjOTQ2X3Yy
+Token 2: ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgxMzY3NmFlODU4NzQ0NjQwZjUyYzM0NTYxZWM1ODU5MWU4ZTdhOGQzX3Yy
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/delivery/v1/buyer/order
 Proxy:			&lt;none&gt;
@@ -999,15 +883,15 @@ Request params:	&lt;none&gt;
 Query params:	&lt;none&gt;
 Form params:	&lt;none&gt;
 Path params:	&lt;none&gt;
-Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXg0OTdhMzlmN2FmNmZlYzI0ZWIwMDVjMDc4YTg4Mjk2YzU0YTVjOTQ2X3Yy
+Headers:		Authorization=Basic ZDg5YjNkNzUtNmUwZi00OWJlLWE1ZWItODFhZDkwODM1ZTY4Om1jMXgxMzY3NmFlODU4NzQ0NjQwZjUyYzM0NTYxZWM1ODU5MWU4ZTdhOGQzX3Yy
 				Accept=*/*
 Cookies:		&lt;none&gt;
 Multiparts:		&lt;none&gt;
 Body:			&lt;none&gt;
-Time: 255
+Time: 389
 Body Response: {&quot;orders&quot;:[]}
 Headers: Server=nginx
-Date=Thu, 07 Jul 2022 09:47:42 GMT
+Date=Thu, 07 Jul 2022 10:16:00 GMT
 Content-Type=application/json
 Vary=Accept-Encoding
 X-Frame-Options=DENY
@@ -1018,10 +902,10 @@ Transfer-Encoding=chunked
 </pre>
 </span>
 </div>
-<div id="tab3" class="tab">
+<div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>jul 07, 2022 4:47:04 AM org.aspectj.weaver.tools.Jdk14Trace error
+<pre>jul 07, 2022 5:15:22 AM org.aspectj.weaver.tools.Jdk14Trace error
 GRAVE: org/codehaus/groovy/runtime/callsite/AbstractCallSite
 java.lang.RuntimeException: bad non-abstract method with no code: void org.codehaus.groovy.runtime.callsite.AbstractCallSite.&lt;init&gt;(org.codehaus.groovy.runtime.callsite.CallSiteArray, int, java.lang.String) on public class org.codehaus.groovy.runtime.callsite.AbstractCallSite
 	at org.aspectj.weaver.bcel.LazyMethodGen.&lt;init&gt;(LazyMethodGen.java:223)
@@ -1160,8 +1044,8 @@ java.lang.RuntimeException: bad non-abstract method with no code: void org.codeh
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
 	at java.lang.Thread.run(Thread.java:748)
 
-jul 07, 2022 4:47:04 AM org.aspectj.weaver.tools.Jdk14Trace info
-INFORMACIÓN: Dumping to C:\Users\cynth\Documents\Proyectos\API\APIS-Junio2022\RestAssured\.\ajcore.20220707.044704.584.txt
+jul 07, 2022 5:15:22 AM org.aspectj.weaver.tools.Jdk14Trace info
+INFORMACIÓN: Dumping to C:\Users\cynth\Documents\Proyectos\API\APIS-Junio2022\RestAssured\.\ajcore.20220707.051522.746.txt
 </pre>
 </span>
 </div>
@@ -1173,7 +1057,7 @@ INFORMACIÓN: Dumping to C:\Users\cynth\Documents\Proyectos\API\APIS-Junio2022\R
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.1</a> at 7/07/2022 04:47:34 AM</p>
+<a href="http://www.gradle.org">Gradle 7.1</a> at 7/07/2022 05:15:52 AM</p>
 </div>
 </div>
 </body>
